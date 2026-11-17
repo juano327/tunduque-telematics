@@ -1,0 +1,16 @@
+idf_component_register(SRCS "main.c"
+                            "nmea_parser/nmea_parser.c"
+                            "wifi/wifi_control.c"
+                            "adc/adc_control.c"
+                            "ota/ota_control.c"
+                            "mqtt/mqtt_control.c"
+                            "nvs/nvs_control.c"
+                            "sleep/sleep_control.c"
+                            "gpio/gpio_control.c"
+                            "http/http_control.c"
+                            "dns/dns_control.c"
+                            "hourmeter/hourmeter.c"
+                            "imu/imu.c"
+                       INCLUDE_DIRS "."
+                       REQUIRES esp_event esp_driver_uart esp_driver_gpio esp_wifi nvs_flash esp-dsp driver esp_adc json
+                       PRIV_REQUIRES mqtt esp_netif esp_hw_support esp_http_server spiffs app_update esp_https_ota led_strip)

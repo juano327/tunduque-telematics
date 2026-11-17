@@ -1,0 +1,7 @@
+# Name,   Type, SubType, Offset,  Size,    Flags
+nvs,      data, nvs,     0x9000,  0x4000,
+otadata,  data, ota,     0xe000,  0x2000,
+phy_init, data, phy,     ,        0x1000,
+app0,     app,  ota_0,   ,        1300K,
+app1,     app,  ota_1,   ,        1300K,
+spiffs,   data, spiffs,  ,        800K,

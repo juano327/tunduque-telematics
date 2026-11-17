@@ -1,0 +1,8 @@
+## IDF Component Manager Manifest File
+dependencies:
+  espressif/esp-dsp:
+    version: "^1.4.9"
+  ## Required IDF version
+  idf:
+    version: ">=4.1.0"
+  espressif/led_strip: "^2.5.0"
